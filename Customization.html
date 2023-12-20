@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Customization.css" />
+  </head>
+  <body>
+    <main>
+      <div class="top">
+        <h1>Customise your thumster</h1>
+        <img src="Monster.svg" alt="monster" />
+      </div>
+      <div class="bottom">
+        <div class="bar category-bar">
+          <div class="category-button">
+            <div class="shadow"></div>
+            <div class="main">Head</div>
+          </div>
+          <div class="category-button">
+            <div class="shadow"></div>
+            <div class="main">Head</div>
+          </div>
+          <div class="category-button">
+            <div class="shadow"></div>
+            <div class="main">Head</div>
+          </div>
+          <div class="category-button">
+            <div class="shadow"></div>
+            <div class="main">Head</div>
+          </div>
+          <div class="category-button">
+            <div class="shadow"></div>
+            <div class="main">Head</div>
+          </div>
+          <div class="category-button">
+            <div class="shadow"></div>
+            <div class="main">Head</div>
+          </div>
+        </div>
+        <div class="bar body-parts-bar">
+          <img src="Body.svg" alt="body" />
+          <img src="Body2.svg" alt="body" />
+          <img src="Body.svg" alt="body" />
+          <img src="Body2.svg" alt="body" />
+          <img src="Body.svg" alt="body" />
+          <img src="Body2.svg" alt="body" />
+          <img src="Body.svg" alt="body" />
+          <img src="Body2.svg" alt="body" />
+        </div>
+      </div>
+    </main>
+    <script>
+      function vh(percent) {
+        var h = Math.max(
+          document.documentElement.clientHeight,
+          window.innerHeight || 0
+        );
+        return (percent * h) / 100;
+      }
+
+      window.addEventListener("resize", () => {
+        console.log(vh(5));
+      });
+    </script>
+  </body>
+</html>

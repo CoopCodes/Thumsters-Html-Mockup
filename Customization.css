@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 112%;
+    color: var(--color-typography-dark);
+    overflow: hidden;
+}
+
+:root {
+    --color-background-bg-ui: #FFFFFF;
+    --color-background-bg: #F3F4F6;
+    --color-background-tertiary-inverse: #E5E7EB;
+    --color-typography-dark: #4D4752;
+}
+
+main {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+
+    grid-auto-columns: 1fr;
+    
+    column-gap: 0px;
+    row-gap: 0px;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 1fr;
+    overflow: hidden;
+}
+
+.top {
+    background-color: var(--color-background-bg-ui);
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+}
+
+.top h1 {
+    text-align: center;
+    max-width: 270px;
+    color: var(--color-typography-dark);
+
+    font-size: clamp(1em, 4vh, 2em);
+    /* font-size: 2em; */
+
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 112%;
+    
+    margin-top: clamp(30px, 10vh, 120px);
+    margin-bottom: auto;
+}
+
+.top img {
+    margin-top: 20px;
+    height: clamp(200px, 35vh, 300px);
+}
+
+.bottom {
+    background-color: var(--color-background-bg);
+    height: 100%;
+    width: 100%;
+
+    border-top: 3px solid var(--color-background-tertiary-inverse);
+}
+
+.bottom .bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    width: 100vw;
+    overflow-x: auto;
+    white-space: nowrap;
+    
+    padding-left: 20px;
+}
+
+.bottom.bar:last-child {
+    margin-right: 20px;
+}
+
+.bottom .category-bar {
+    height: 93px;
+    border-bottom: 3px solid var(--color-background-tertiary-inverse);
+    gap: 8px;
+}
+
+.bottom .category-button {
+    position: relative;
+    min-width: 89px;
+    height: 56px;    
+}
+
+.bottom .category-button .main {
+    position: absolute;
+    top: -5.5px;
+    min-width: 89px;
+    height: 56px;
+    
+    z-index: 1;
+    
+    background-color: var(--color-background-bg-ui);
+    
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1rem;
+}
+
+.bottom .category-button .shadow {
+    position: absolute;
+    top: 0;    
+
+    border-radius: 5px;
+    min-width: 89px;
+    height: 56px;
+    z-index: 0;
+    background-color: var(--color-background-tertiary-inverse);
+}
+
+.body-parts-bar {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    height: calc(100% - 186px);
+    gap: 30px;
+}
+
+.body-parts-bar img {
+    margin-top: auto;
+}
